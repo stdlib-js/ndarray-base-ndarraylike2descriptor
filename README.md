@@ -45,22 +45,40 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray-base-ndarraylike2descriptor
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import ndarraylike2descriptor from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-ndarraylike2descriptor@esm/index.mjs';
+var ndarraylike2descriptor = require( '@stdlib/ndarray-base-ndarraylike2descriptor' );
 ```
 
-#### ndarraylike2descriptor( dtype, buffer, shape, strides, offset, order )
+#### ndarraylike2descriptor( x )
 
 Converts an ndarray-like object to an ndarray [descriptor][@stdlib/ndarray/base/descriptor].
 
 ```javascript
-import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-zeros@esm/index.mjs';
+var zeros = require( '@stdlib/ndarray-zeros' );
 
 var x = zeros( [ 2, 2 ] );
 var out = ndarraylike2descriptor( x );
@@ -97,15 +115,10 @@ The function accepts the following arguments:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-discrete-uniform@esm/index.mjs';
-import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@esm/index.mjs';
-import ndarraylike2descriptor from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-ndarraylike2descriptor@esm/index.mjs';
+```javascript
+var discreteUniform = require( '@stdlib/random-discrete-uniform' );
+var ndarray2array = require( '@stdlib/ndarray-to-array' );
+var ndarraylike2descriptor = require( '@stdlib/ndarray-base-ndarraylike2descriptor' );
 
 var x = discreteUniform( [ 3, 3 ], 0, 10, {
     'dtype': 'generic'
@@ -114,10 +127,6 @@ console.log( ndarray2array( x ) );
 
 var obj = ndarraylike2descriptor( x );
 console.log( obj );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -149,7 +158,7 @@ console.log( obj );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -212,7 +221,7 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray-base-ndarraylike2descriptor/main/LICENSE
 
-[@stdlib/ndarray/base/descriptor]: https://github.com/stdlib-js/ndarray-base-descriptor/tree/esm
+[@stdlib/ndarray/base/descriptor]: https://github.com/stdlib-js/ndarray-base-descriptor
 
 </section>
 
