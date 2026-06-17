@@ -1,5 +1,5 @@
-"use strict";var i=function(e,r){return function(){return r||e((r={exports:{}}).exports,r),r.exports}};var a=i(function(n,t){
-var s=require('@stdlib/ndarray-base-dtype/dist'),u=require('@stdlib/ndarray-base-data-buffer/dist'),d=require('@stdlib/ndarray-base-shape/dist'),p=require('@stdlib/ndarray-base-strides/dist'),q=require('@stdlib/ndarray-base-offset/dist'),v=require('@stdlib/ndarray-base-order/dist');function g(e){return{dtype:s(e),data:u(e),shape:d(e,!0),strides:p(e,!0),offset:q(e),order:v(e)}}t.exports=g
-});var o=a();module.exports=o;
+"use strict";var s=function(e,r){return function(){try{return r||e((r={exports:{}}).exports,r),r.exports}catch(i){throw (r=0, i)}};};var a=s(function(c,t){
+var u=require('@stdlib/ndarray-base-dtype/dist'),d=require('@stdlib/ndarray-base-data-buffer/dist'),p=require('@stdlib/ndarray-base-shape/dist'),q=require('@stdlib/ndarray-base-strides/dist'),v=require('@stdlib/ndarray-base-offset/dist'),g=require('@stdlib/ndarray-base-order/dist');function o(e){return{dtype:u(e),data:d(e),shape:p(e,!0),strides:q(e,!0),offset:v(e),order:g(e)}}t.exports=o
+});var f=a();module.exports=f;
 /** @license Apache-2.0 */
 //# sourceMappingURL=index.js.map
