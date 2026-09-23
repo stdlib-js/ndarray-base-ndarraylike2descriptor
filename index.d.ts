@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2026 The Stdlib Authors.
@@ -16,26 +16,27 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
+
+import { ndarray, Descriptor } from '@stdlib/types/ndarray';
 
 /**
-* Convert an ndarray-like object to an ndarray descriptor.
+* Converts an ndarray-like object to an ndarray descriptor.
 *
-* @module @stdlib/ndarray-base-ndarraylike2descriptor
+* @param x - input ndarray
+* @returns ndarray descriptor
 *
 * @example
 * var zeros = require( '@stdlib/ndarray-zeros' );
-* var ndarraylike2descriptor = require( '@stdlib/ndarray-base-ndarraylike2descriptor' );
 *
 * var out = ndarraylike2descriptor( zeros( [ 2, 2 ] ) );
 * // returns {...}
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function ndarraylike2descriptor( x: ndarray ): Descriptor;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = ndarraylike2descriptor;
